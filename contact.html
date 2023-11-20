@@ -7,19 +7,47 @@
 <body>
     <script>
         let n1 = 4
-        let n2 = 8
+        let n2 = 10
 
-        function bigger(num1, num2,num3) {
-            debugger
+        // function get_bigger(num1, num2){
+        //     debugger
+        //     if (num1 > num2) {
+        //         return num1
+        //     }
+        //     else{
+        //         return num2
+        //     }
+        // }
+        // // debugger
+        // let myTemp=get_bigger(3,n2)
+        // myTemp=get_bigger(7,myTemp)
+        // myTemp=get_bigger(99,myTemp)
+        // console.log( myTemp)
+        // console.log( get_bigger(2,8))
+        // console.log( 8)
+
+        function bigger(num1, num2, num3) {
             if (num1 > num2) {
-                console.log(num1);
-            } else {
-                console.log(num2);
+                if (num1 > num3) {
+                    return num1
+                } else {
+                    return num3
+                }
             }
+            else {
+                if (num2 > num3) {
+                    return num2
+                } else {
+                    return num3
+                }
+            }
+
+
         }
 
-        bigger(2,n2,77)
-        bigger(n1,n1,77)
+        console.log( bigger(2, n2, 177) *2)
+        // bigger(778, n1, 7)
+        // bigger(1, 797, 7)
     </script>
 
 
